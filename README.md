@@ -1,6 +1,7 @@
 <img src="docs/_static/logo.png" height="70px" align="left" />
 
 # QuizBot
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Anonymouscoderboy/QuizBot)
 
 ![example workflow](https://github.com/antonykamp/QuizBot/actions/workflows/test.yml/badge.svg)
 [![Documentation Status](https://readthedocs.org/projects/quizbot/badge/?version=latest)](https://quizbot.readthedocs.io/en/latest/?badge=latest)
