@@ -34,12 +34,6 @@
       "url": "heroku/nodejs"
     }
   ],
-  "formation": {
-    "web": {
-      "quantity": 1,
-      "size": "eco"
-    }
-  },
   "scripts": {
     "postdeploy": "npm install && npm run setup"
   }
