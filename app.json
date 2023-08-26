@@ -1,0 +1,46 @@
+{
+  "name": "QuizBot",
+  "description": "Telegram Quiz Bot",
+  "repository": "https://github.com/Anonymouscoderboy/QuizBot.git",
+  "env": {
+    "MONGODB_URI": {
+      "description": "MongoDB connection string"
+    },
+    "TELEGRAM_TOKEN": {
+      "description": "Telegram Bot Token"
+    },
+    "WEBHOOK": {
+      "description": "Your webhook URL"
+    },
+    "API_HASH": {
+      "description": "Your API hash for Telegram"
+    },
+    "API_ID": {
+      "description": "Your API ID for Telegram"
+    },
+    "SESSION_STR": {
+      "description": "Session string for Telegram"
+    },
+    "UPDATER_ID": {
+      "description": "ID of the updater user"
+    }
+  },
+  "addons": [
+    // You can add any necessary Heroku add-ons here, such as a MongoDB database
+    // Example: "heroku-postgresql:hobby-dev"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  },
+  "scripts": {
+    "postdeploy": "npm install && npm run setup"
+  }
+}
